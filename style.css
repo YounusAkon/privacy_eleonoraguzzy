@@ -54,10 +54,114 @@ li {
     font-style: italic;
 }
 
-.footer {
+/* Header / Navigation */
+.site-header {
+    background: #1f4e79;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+
+.site-nav a {
+    color: #d6e4f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.site-nav a:hover {
+    color: #ffffff;
+}
+
+.site-nav a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Hero section (home page) */
+.hero {
+    background: linear-gradient(135deg, #96B9FF 10%, #3C72F1 40%, #91365F 90%);
+    color: #ffffff;
     text-align: center;
-    margin-top: 40px;
+    padding: 60px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.link-card {
+    display: block;
+    background: #f5f7fa;
+    border: 1px solid #e0e6ed;
+    border-radius: 10px;
+    padding: 24px 20px;
+    text-decoration: none;
+    color: #1f4e79;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.link-card:hover {
+    background: #1f4e79;
+    color: #ffffff;
+    border-color: #1f4e79;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 24px 20px;
     color: #777;
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: #1f4e79;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
 }
 
 @media(max-width:768px){
@@ -67,5 +171,13 @@ li {
 
     .card{
         padding:25px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
     }
 }
