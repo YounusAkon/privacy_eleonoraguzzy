@@ -45,7 +45,7 @@ p {
     margin-bottom: 15px;
 }
 
-ul {
+ul, ol {
     margin-left: 20px;
     margin-bottom: 15px;
 }
